@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html {
+    background-color: hsl(216, 12%, 8%);
+}
+
+#ratingState {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 30%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+
+}
+
+#numbers {
+    flex-direction: row;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+}
+
+#ratingStateContent {
+    padding: 20px;
+}
+
+#ratingStateContent p {
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+}
+
+#numbers button {
+    border-radius: 50%;
+    padding: 15px 20px;
+    background-color: hsla(216, 12%, 54%, 0.274);
+    color: rgb(149, 158, 172); 
+    border-color: hsla(216, 12%, 54%, 0.16);
+    transition-duration: 0.4s;    
+}
+
+#numbers button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+#numbers button.clicked {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+#numbers {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#star {
+    background-color: hsla(216, 12%, 54%, 0.274);
+    border-radius: 50%;
+    padding: 15px 15px;
+}
+
+#submitButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 13px 0 13px 0;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    transition-duration: 0.4s;
+    border-color: hsl(25, 97%, 53%);
+}
+
+#submitButton:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    border-color: white;
+}
+
+#thankyouStateContent p {
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+h2 {
+    color: white;
+    font-weight: 700;
+}
+
+#thankyouState {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 30%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+}
+
+#thankyouStateContent {
+    padding: 35px 25px 30px 25px;
+    display: flex;
+    justify-content: column;
+    flex-direction: column;
+    align-items: center;
+}
+
+#selectionSentence {
+    color: hsl(25, 97%, 53%);
+    background-color: hsla(216, 12%, 54%, 0.144);
+    border-radius: 30px;
+    padding: 7px 20px 7px 20px;
+    margin-top: 10px;
+}
+
+#ratingText {
+    margin-top: -10px;
+}
+
+.attribution {
+    color: white;
+}
+
+@media (max-width: 375px) {
+    #ratingState {
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25%;
+    }
+    h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    #ratingStateContent p {
+        color: hsl(217, 12%, 63%);
+        font-weight: 400;
+        font-size: 15px;
+    }
+    #numbers button {
+        padding: 10px 15px;
+    }
+    #thankyouState {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25%;
+        width: 95%;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    #thankyouStateContent p {
+        font-size: 15px;
+    }
+    #selectionSentence {
+        margin-top: 20px;
+    }
+}
